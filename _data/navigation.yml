@@ -4,7 +4,7 @@ main:
     url: /
   - title: "Buscador"
     url: /buscador/
-  - title: "Articulos"
+  - title: "Articulos por años"
     url: /year-archive/
   - title: "Categorias"
     url: /categories/

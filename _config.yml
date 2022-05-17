@@ -1,4 +1,5 @@
 # Welcome to Jekyll!
+
 # Archivo de Configuración a nivel general del Blog
 # Configura tanto : post , page , portfolio , layout , gallery , etc 
 
@@ -14,24 +15,26 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
+
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Blog 101"
+title                    : "Guía Básica De Desarrollo Full Stack"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
+# name                     : &name "RVS"
 name                     : "RVS"
+# description              : &description "Blog sobre Programación e Informática"
 description              : "Blog sobre Programación e Informática"
 url                      : "https://rvsweb.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-repository               : "/RVSWeb/Blog101"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# logo                     : "assets/images/a.jpg"
+repository               : "rvsweb/guia-basica-de-desarrollo-full-stack"
+# teaser                 : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# logo                   : "assets/images/a.jpg"
 logo                     : "assets/images/yin-80x80.jpg"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default) 
 words_per_minute         : 200
 comments:
@@ -44,9 +47,9 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : dark # "light" (default), "dark"
+    colorscheme          : neon # dark # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
+    theme                : github-dark # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
@@ -107,7 +110,7 @@ analytics:
 # Site Author
 author:
   name             : "RVSWeb"
-  avatar           : "/assets/images/llama.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Desarrollador Junior Full Stack"
   home             : # null (default)
   location         : "Spain"
@@ -115,21 +118,21 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "otracuentamovil101@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+      url: "otracuentamovil101@gmail.com"
+    # - label: "Website"
+      # icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/robot10116"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/rad.wulf.5439/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      url: "https://github.com/RVSWeb"
+    # - label: "Instagram"
+      # icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
@@ -137,27 +140,28 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: https://twitter.com/robot10116
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: https://www.facebook.com/rad.wulf.5439/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/RVSWeb"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+      url: "https://github.com/rvsweb/git-github-guia-basica"
+    # - label: "GitLab"
+      # icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
+    # - label: "Bitbucket"
+      # icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "Instagram"
+      # icon: "fab fa-fw fa-instagram"
       # url:
 
 # Reading Files
 include:
   - .htaccess
   - _pages
+  - assets/images
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -209,7 +213,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections - Borrar
+# Collections
 collections:
   docs:
     output: true
@@ -223,15 +227,7 @@ collections:
 
 # Defaults
 defaults:
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      
+
   # _posts
   - scope:
       path: ""
@@ -250,6 +246,15 @@ defaults:
       type: pages
     values:
       layout: single
+
+# _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
   # recipes
   - scope:
